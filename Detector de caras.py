@@ -5,9 +5,9 @@ from skimage import io
 
 detector = dlib.get_frontal_face_detector() ##función que detecta caras##
 
-img = io.imread('image.jpg')##bajar la imágen##
+img = io.imread('image.jpg')##bajar la imagen##
 
-faces = detector(img) ##aplicar la función a la imágen##
+faces = detector(img) ##aplicar la función a la imagen##
 i = 0 ##contador de caras##
 for face in faces:
     x1 = face.left() ##coordenadas de referencia para dibujar el rectángulo##
@@ -25,12 +25,12 @@ tamañoLetra = 5
 colorLetra = (221,82,196)
 grosorLetra = 10
 
-#Escribir texto en la imágen
+##Escribir texto en la imagen##
 cv2.putText(img, texto, ubicacion, font, tamañoLetra, colorLetra, grosorLetra)
-cv2.imshow(winname="Face", mat=img)  ##muestra la imágen##
+cv2.imshow(winname="Face", mat=img)  ##muestra la imagen##
 
-cv2.waitKey(delay=0) ##cierra la imágen al tocar una tecla##
+cv2.waitKey(delay=0) ##tocar una tecla para cerrar la imágen en la subsiguiente linea##
 
-cv2.destroyAllWindows()##hace que se cierre la ventana##
+cv2.destroyAllWindows()##hace que se cierre la ventana de la imagen##
 
 
