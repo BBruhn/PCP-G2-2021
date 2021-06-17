@@ -19,7 +19,7 @@ for face in faces:
 
     i = i+1
     cv2.rectangle(img=img, pt1=(x1, y1), pt2=(x2, y2), color=(0, 255, 0), thickness=4)
-texto = "Hay"+ str(i) + "caras"
+texto = "Hay "+ str(i) + " caras"
 ubicacion = (200,700)
 font = cv2.FONT_HERSHEY_TRIPLEX
 tamañoLetra = 5
