@@ -33,4 +33,6 @@ cv2.waitKey(delay=0) ##tocar una tecla para cerrar la imágen en la subsiguiente
 
 cv2.destroyAllWindows()##hace que se cierre la ventana de la imagen##
 
+#### codigo hecho a partir de https://quenube.com/una-guia-completa-sobre-como-detectar-caras-con-python/ ####
+
 
